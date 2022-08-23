@@ -1,0 +1,15 @@
+# Git
+.git
+.gitignore
+
+# Docker
+.docker
+
+# Python
+diveriumshare/__pychache__/
+diveriumshare/*/__pychache__/
+diveriumshare/*/*/__pychache__/
+diveriumshare/*/*/*/__pychache__/
+.env/
+.venv/
+venv/
