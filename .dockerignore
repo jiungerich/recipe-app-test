@@ -6,10 +6,10 @@
 .docker
 
 # Python
-diveriumshare/__pychache__/
-diveriumshare/*/__pychache__/
-diveriumshare/*/*/__pychache__/
-diveriumshare/*/*/*/__pychache__/
+app/__pychache__/
+app/*/__pychache__/
+app/*/*/__pychache__/
+app*/*/*/__pychache__/
 .env/
 .venv/
 venv/
