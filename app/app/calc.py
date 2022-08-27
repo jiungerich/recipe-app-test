@@ -1,6 +1,5 @@
 """
 Calculator functions
-
 """
 
 
