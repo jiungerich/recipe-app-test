@@ -85,7 +85,7 @@ class PrivateTagsApiTests(TestCase):
         self.assertEqual(tag.name, payload['name'])
 
     def test_delete_tag(self):
-        """Test deleteing a tag"""
+        """Test deleting a tag."""
         tag = Tag.objects.create(user=self.user, name='Breakfast')
 
         url = detail_url(tag.id)
