@@ -21,7 +21,7 @@ def create_user(email='user@example.com', password='testpass123'):
     return get_user_model().objects.create_user(email=email, password=password)
 
 
-class PubicTagsApiTests(TestCase):
+class PublicTagsApiTests(TestCase):
     """Test unauthenticated API requests."""
 
     def setUp(self):
@@ -35,7 +35,7 @@ class PubicTagsApiTests(TestCase):
 
 
 class PrivateTagsApiTests(TestCase):
-    """Test authenicated API requests."""
+    """Test authenticated API requests."""
 
     def setUp(self):
         self.user = create_user()
@@ -56,7 +56,7 @@ class PrivateTagsApiTests(TestCase):
 
     def test_tags_limited_to_user(self):
         """Test list of tags is limited to authenticated user."""
-        user2 = create_user(email="user2@example.com")
+        user2 = create_user(email='user2@example.com')
         Tag.objects.create(user=user2, name='Fruity')
         tag = Tag.objects.create(user=self.user, name='Comfort Food')
 
